@@ -1,4 +1,5 @@
 
+import Clientes from './features/clientes/Clientes'
 import { useEffect, useState } from 'react'
 import { supabase } from './lib/supabase'
 import type { User } from '@supabase/supabase-js'
@@ -143,7 +144,7 @@ function App() {
           >
             Cerrar sesión
           </button>
-
+          <Clientes key={usuario.id} />
           <h3>Despachos autorizados</h3>
 
           <ul>
